@@ -4,13 +4,17 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
 # Use sqlite3 as the database for Active Record
-gem 'bootstrap-sass', '~> 3.2.0'
+gem 'bootstrap-sass', '~> 3.1.0'
 gem 'high_voltage', '~> 2.2.0'
+gem 'comfortable_mexican_sofa', '~> 1.12.0'
+gem 'comfy_blog', '~> 1.12.0'
+
 
 
 group :development do
   gem "better_errors"
-  gem "binding_of_caller"  
+  gem "binding_of_caller" 
+  gem "sqlite3" 
 end
 
 group :production do

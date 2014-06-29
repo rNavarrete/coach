@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  
+
+  
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -55,4 +59,14 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  comfy_route :blog_admin, :path => '/admin'
+  comfy_route :blog, :path => '/blog'
+
+
+
+  comfy_route :cms_admin, :path => '/admin'
+
+  # Make sure this routeset is defined last
+  comfy_route :cms, :path => 'pages/home', :sitemap => false
 end
